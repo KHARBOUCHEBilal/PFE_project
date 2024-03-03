@@ -1,0 +1,37 @@
+.tags {
+    padding: 5px 0;
+    text-align: left;
+    overflow: hidden;
+    .tag {
+        position: relative;
+        background-color: #ccc;
+        border-radius: 5px;
+        text-align: center;
+        float: left;
+        margin: 3px;
+        color: $textColor1;
+        padding: 0 10px;
+        pointer-events: none;
+        &:hover{
+            background-color: rgba($color: $mainColor, $alpha: .3);
+            color: $textColor1;
+        }
+
+        &.active {
+            background-color: $mainColor;
+            color: #fff;
+        }
+        input {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            border: 0;
+            opacity: 0;
+            cursor: pointer;
+            pointer-events: auto;
+        }
+    }
+}

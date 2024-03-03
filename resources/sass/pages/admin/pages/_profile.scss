@@ -1,0 +1,196 @@
+.profile {
+    .profile-header {
+        text-align: center;
+        .cover {
+            background-color: #fff;
+            border: 3px solid #ddd;
+            border-radius: 20px;
+            height: 200px;
+            width: 100%;
+            position: relative;
+        }
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border: 3px solid #ddd;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -75px;
+            left: calc(50% - 75px);
+            background-color: #fff;
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+
+            .edit {
+                border: 1px solid $mainColor;
+                border-radius: 50%;
+                width: 30px !important;
+                height: 30px !important;
+                position: absolute;
+                bottom: 5px;
+                right: 5px;
+                overflow: hidden;
+
+                label {
+                    input {
+                        opacity: 0;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        z-index: 2;
+                    }
+                    i {
+                        background-color: #ddd;
+                        border: 1px solid $mainColor;
+                        color: $textColor1;
+                        border-radius: 50%;
+                        width: 30px !important;
+                        height: 30px !important;
+                        position: absolute;
+                        top: -1px;
+                        right: -1px;
+                        text-align: center;
+                        font-size: 18px;
+                        line-height: 30px;
+                    }
+                }
+            }
+
+            .save {
+                padding: 0 5px;
+                border: 1px solid $mainColor;
+                border-radius: 5px;
+                position: absolute;
+                bottom: 3px;
+                right: 48px;
+                display: none;
+
+                &.active {
+                    display: block;
+                }
+            }
+        }
+
+        .edit {
+            background-color: #ddd;
+            border: 2px solid $mainColor;
+            color: $textColor1;
+            border-radius: 50%;
+            width: 45px !important;
+            height: 45px !important;
+            position: absolute;
+            bottom: 5px;
+            right: 10px;
+            text-align: center;
+            padding-top: 5px;
+            font-size: 20px;
+        }
+        .name {
+            font-weight: bold;
+            font-size: 24px;
+            color: #888;
+            margin-top: 80px;
+        }
+
+        .registred-date {
+            font-size: 18px;
+            color: #888;
+        }
+    }
+
+    .section-top {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .other-page {
+            padding: 5px 15px;
+            height: 35px;
+            color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            font-weight: 500;
+            background-color: $secondColor;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 7.9873px 6.974px rgba(0, 115, 255, 0.2);
+
+            &:hover {
+                background-color: $mainColor;
+                color: $textColor1;
+            }
+
+            a {
+                color: #f2f2f2;
+            }
+
+            i {
+                margin: 0 5px;
+            }
+        }
+    }
+    .all-shops {
+        .shops-item {
+            overflow: hidden;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            .item-header {
+                overflow: hidden;
+                height: 200px;
+                position: relative;
+                .screen {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                .logo {
+                    width: 50px;
+                    height: 50px;
+                    border: 2px solid #fff;
+                    border-radius: 15px;
+                    position: absolute;
+                    bottom: 10px;
+                    left: 10px;
+                }
+            }
+            .item-body {
+                background-color: #fff;
+                padding: 5px;
+                .title {
+                    font-weight: bold;
+                    font-size: 16px;
+                    color: $textColor1 !important;
+                }
+
+                .category {
+                    font-size: 12px;
+                    margin-bottom: 5px;
+                    color: $textColor1 !important;
+                }
+                .location {
+                    font-weight: bold;
+                    color: $textColor1;
+                    margin-bottom: 5px;
+                    font-size: 12px;
+                    i {
+                        height: 15px;
+                        width: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

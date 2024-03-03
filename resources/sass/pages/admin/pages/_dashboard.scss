@@ -1,0 +1,100 @@
+.dashboard {
+  .section-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: $textColor1;
+    text-align: start;
+    padding: 10px 0;
+  }
+  .filter {
+    color: #333 !important;
+    background-color: #fff !important;
+    font-size: 18px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    padding: 15px;
+  }
+  .manage {
+    border-radius: 10px;
+    border: 1px solid $secondColor;
+    color: $secondColor;
+    background-color: rgba($color: $secondColor, $alpha: 0.1);
+    padding: 10px 15px;
+  }
+  .setting {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 30px;
+
+    .title {
+      color: #333;
+      font-size: 22px;
+      .status {
+        color: $mainColor;
+        font-weight: bold;
+        border-radius: 1px solid $mainColor;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: rgba($color: $mainColor, $alpha: 0.1);
+      }
+      .date {
+        font-size: 16px;
+        color: $textColor1;
+        margin-left: 20px;
+        font-weight: bold;
+
+        span {
+          color: $mainColor;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .last-subjects {
+    .title {
+      color: #333;
+      font-size: 24px;
+      margin: 20px 0;
+    }
+    .subject {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      background-color: #fff;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      align-items: center;
+      padding: 10px;
+      a {
+        padding: 5px 15px;
+        margin: 5px;
+        border-radius: 10px;
+      }
+      .approve {
+        color: $mainColor;
+        background-color: rgba($color: $mainColor, $alpha: 0.1);
+        border: 1px solid $mainColor;
+      }
+
+      .delete {
+        color: $red;
+        background-color: rgba($color: $red, $alpha: 0.1);
+        border: 1px solid $red;
+      }
+      .show {
+        color: $secondColor;
+        background-color: rgba($color: $secondColor, $alpha: 0.1);
+        border: 1px solid $secondColor;
+      }
+    }
+  }
+}

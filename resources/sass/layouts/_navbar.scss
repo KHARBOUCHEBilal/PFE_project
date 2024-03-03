@@ -1,0 +1,112 @@
+.navbar {
+    justify-content: space-between;
+    height: 80px !important;
+    padding: 0 !important;
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 8;
+    background-color: #FFF;
+    box-shadow: 0 2.9874px 3.9763px rgba($color: #000000, $alpha: 0.1);
+    margin-bottom: 70px;
+    @media (max-width:991px) {
+        .navbar-collapse{
+            background-color: #FFF;
+        }
+    }
+
+
+    .navbar-toggler{
+        color: #3333;
+        border: 1px solid #ccc;
+        padding: 5px;
+        outline: none;
+        box-shadow: none;
+        width: 35px;
+        height: 35px;
+        &:active,&:hover{
+            outline: none;
+        box-shadow: none;
+        }
+        span{
+            color: #3333;
+        }
+    }
+    &.home{
+        background-color: transparent;
+        box-shadow: none;
+        margin-bottom: 0;
+        .navbar-collapse{
+            background-color: transparent;
+        }
+        @media (max-width:991px) {
+            background-color: #FFF;
+            box-shadow: 0 2.9874px 3.9763px rgba($color: #000000, $alpha: 0.1);
+            .navbar-collapse{
+                background-color: #FFF;
+            }
+        }
+
+        &.bg-enable{
+            background-color: #FFF;
+            box-shadow: 0 2.9874px 3.9763px rgba($color: #000000, $alpha: 0.1);
+        }
+
+        &.bg-desible{
+            @media (min-width:992px) {
+                background-color: transparent;
+                box-shadow: none;
+            }
+            @media (max-width:991px) {
+                background-color: rgba($color: #000000, $alpha: .8 );
+                box-shadow: 0 2.9874px 3.9763px rgba($color: #000000, $alpha: 0.1);
+                .navbar-collapse{
+                    background-color: rgba($color: #000000, $alpha: .8 );
+                }
+            }
+        }
+    }
+    .logo{
+        margin-left: -12px;
+        img{
+            height: 80px;
+        }
+    }
+
+
+    .navbar-nav {
+        justify-content: end;
+        .icon{
+            i{
+            font-size: 25px;
+            line-height: 60px;
+            }
+        }
+        .nav-link {
+            line-height: 50px;
+            padding: 0 8px;
+            margin: 10px 2px;
+            color: #333;
+            background-color: transparent;
+            font-size: 20px;
+            font-weight: bold;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border: none;
+            @media (max-width:991px) {
+                margin: 3px;
+            }
+            &:hover,
+            &.active {
+                background-color: rgba($color: $mainColor, $alpha: .4);
+                color: #f7f7f7;
+            }
+            position: relative;
+                &::before{
+                    content: "";
+                    display: none;
+            }
+        }
+    }
+}

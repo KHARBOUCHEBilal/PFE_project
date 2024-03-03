@@ -1,0 +1,57 @@
+.content-box{
+position: relative;
+.action{
+    padding: 3px 5px;
+    font-size: 13px;
+    margin: 3px;
+}
+.card{
+    margin-top: .5px;
+}
+.all{
+    margin: 15px  auto 10px;
+    border-radius: 16px;
+    padding: 3px 15px;
+    display: block;
+    width: 200px;
+}
+
+.search{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    input{
+        width: 100%;
+        padding: 10px;
+        border-radius: 20px;
+        color: #777;
+        border: none;
+        box-shadow: 0 0 7.8976px -0.2104px rgba($color: $textColor1, $alpha: .3);
+        outline: none;
+        &:focus{
+            outline: none;
+            border: none;
+        }
+    }
+    button{
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    right: 2px;
+    width: 80px;
+    color: $body-bg;
+    font-weight: bold;
+    background-color: $textColor1;
+    border-radius: 30px;
+    border:none;
+    outline: none;
+    &:hover{
+        border:none;
+        outline: none;
+    }
+    }
+}
+}
+

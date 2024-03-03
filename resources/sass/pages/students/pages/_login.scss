@@ -1,0 +1,22 @@
+.login{
+    background-color: #FFF;
+    min-height: calc(100vh - 70px);
+    margin-bottom: 10px;
+    .page-title{
+        padding: 10px 0;
+        font-size: 30px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .logo{
+        height: 180px;
+        text-align: center;
+        overflow: hidden;
+        margin-bottom: 10px;
+        
+        img{
+            height: 100%;
+        }
+    }
+}

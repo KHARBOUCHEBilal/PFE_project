@@ -1,0 +1,75 @@
+.students {
+  .invetation {
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 20px 10px;
+
+    .title {
+      color: $secondColor;
+    }
+    .title {
+      text-align: center;
+      width: 100%;
+      color: $mainColor;
+      font-size: 30px;
+      font-weight: bold;
+    }
+    .sub-title {
+      text-align: start;
+      width: 100%;
+      font-size: 24px;
+      color: $textColor1;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+    .chooses {
+      margin-left: -20px;
+
+      li {
+        padding: 10px;
+        color: $textColor1;
+        font-size: 22px;
+        font-weight: bold;
+        a {
+          float: right;
+          border: 1px solid $mainColor;
+          color: $textColor1;
+          text-align: center;
+          color: $textColor1;
+          border-radius: 10px;
+          padding: 2px 15px;
+          &:hover {
+            color: $secondColor;
+          }
+        }
+      }
+    }
+
+    .actions {
+      display: flex;
+      justify-content: start;
+      .action {
+        padding: 5px 20px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        text-align: center;
+        color: #fff;
+        background-color: $secondColor;
+        margin-right: 20px;
+      }
+
+      .show {
+        background-color: $mainColor;
+      }
+      .delete {
+        background-color: $red;
+      }
+      .edit{
+        background-color: $yellow;
+      }
+    }
+  }
+}

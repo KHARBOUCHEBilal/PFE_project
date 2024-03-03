@@ -1,0 +1,431 @@
+ul {
+    list-style: none;
+}
+.chat-logo {
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+input {
+    outline: none;
+    &:hover,
+    &:focus {
+        outline: none;
+    }
+}
+#container {
+    height: 78vh;
+    position: relative;
+}
+
+/* Side Bar */
+
+#sideBar {
+    width: 410px;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+#barraDeFerramentas {
+    width: 100%;
+    height: 60px;
+    background-color: #eee;
+}
+
+.fotoUsuario {
+    width: 40px;
+    border-radius: 50%;
+    margin: 10px 0 0 15px;
+    background-color: #ccc;
+}
+
+.auxIcon {
+    float: right;
+    height: 60px;
+    line-height: 60px;
+    padding-right: 20px;
+
+    i {
+        color: #80868a;
+        font-size: 20px;
+        margin: 0 15px 0 15px;
+        cursor: pointer;
+    }
+}
+
+/* Container de Notificações */
+
+#containerNotification {
+    width: 100%;
+    height: 90px;
+    padding: 23px 0 0 80px;
+    background-color: #9de1fe;
+    color: #384c56;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.fas.fa-bell-slash {
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+    font-size: 18px;
+    color: #9de1fe;
+    background-color: #f5fcff;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+
+#containerNotification {
+    p {
+        margin: 0;
+    }
+
+    #receberNotification {
+        font-size: 15px;
+        margin-bottom: 3px;
+    }
+
+    #ativarNotification {
+        font-size: 13px;
+    }
+}
+
+/* Container de Pesquisa */
+
+#containerPesquisa {
+    width: 100%;
+    height: 50px;
+    padding: 7.5px 0 0 7.5px;
+    background-color: #f8f8f8;
+    position: relative;
+    color: #bdc1c3;
+    box-sizing: border-box;
+}
+
+#porcurarContato {
+    position: absolute;
+    left: 30px;
+    top: 18px;
+    font-size: 14px;
+}
+
+#procura {
+    border: none;
+    width: 385px;
+    height: 35px;
+    padding-left: 60px;
+    border-radius: 17.5px;
+    background-color: #fff;
+    box-sizing: border-box;
+
+    &::placeholder {
+        color: #bdc1c3;
+    }
+}
+
+/* Container de Contatos */
+
+#containerContatos {
+    height: auto;
+    background-color: #fff;
+}
+.containerContatos {
+    overflow-y: scroll;
+    height: calc(100vh - 250px);
+}
+.boxContato {
+    cursor: pointer;
+    height: 72px;
+    background-color: #fff;
+    border-top: 1px solid #f2f2f2;
+    position: relative;
+    box-sizing: border-box;
+
+    &:last-child {
+        border-bottom: 1px solid #f2f2f2;
+    }
+
+    &:hover {
+        background-color: #f4f5f5;
+    }
+}
+
+.chatAtivo {
+    background-color: #e9ebeb;
+
+    &.boxContato:hover {
+        background-color: #e9ebeb;
+    }
+}
+
+.boxContato .fotoUsuario {
+    width: 50px;
+}
+
+.ifoUsuario {
+    margin-left: 15px;
+    padding-top: 10px;
+    display: inline-block;
+
+    p {
+        margin: 0;
+    }
+}
+
+.infoMenssage p {
+    margin: 0;
+}
+
+.nomeUsuario {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.previewMenssage {
+    font-size: 14px;
+    color: #454545;
+}
+
+.fa-check-double {
+    margin-right: 5px;
+    color: #4fc3f7;
+}
+
+.infoMenssage {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    display: inline-block;
+
+    .horario {
+        font-size: 12px;
+        margin-bottom: 5px;
+        color: #ccc;
+    }
+}
+
+.menssagePendente {
+    background-color: #04fa67;
+    color: #fff;
+    width: 19px;
+    height: 19px;
+    line-height: 19px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    text-align: center;
+    float: right;
+}
+
+/* CHAT */
+
+/* Container Chat */
+
+#chatArea {
+    position: absolute;
+    top: 0;
+    left: 410px;
+    width: calc(100% - 410px);
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+
+    .vide {
+        text-align: center;
+        margin-top: 250px;
+    }
+}
+
+.vide h1 {
+    margin-top: 10px;
+}
+
+/* Chat Navbar */
+
+#chatNavBar {
+    height: 60px;
+    background-color: #eee;
+    border-left: 1px solid #ddd;
+
+    p {
+        margin: 0;
+        float: right;
+        margin-left: 20px;
+    }
+}
+
+#containerContactInfo {
+    display: inline-block;
+    .nomeUsuario {
+        font-size: 16px;
+        height: 60px;
+        line-height: 60px;
+    }
+}
+
+.containerContactInfo {
+    height: calc(100vh - 250px);
+    overflow-y: scroll;
+}
+
+#containerFerramentasChat {
+    float: right;
+    height: 60px;
+    line-height: 60px;
+    margin-right: 20px;
+
+    li {
+        display: inline-block;
+        margin: 0 15px 0 15px;
+        font-size: 18px;
+        color: #80868a;
+        cursor: pointer;
+    }
+}
+
+/* Menssagens */
+
+#containerMenssages {
+    background-color: #e1dad2;
+    height: calc(100% - 120px);
+    position: relative;
+
+    p {
+        margin: 0;
+    }
+}
+
+.bg-image {
+    background-image: url("./img/background_whats.png");
+    background-repeat: repeat;
+    opacity: 0.06;
+    width: 100%;
+    height: 100%;
+}
+
+.chatMenssages {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    padding: 30px 80px;
+    box-sizing: border-box;
+
+    P {
+        display: block;
+        color: #262626;
+        font-size: 14px;
+        padding: 7px;
+        border-radius: 7px;
+        position: relative;
+        width: 100%;
+    }
+}
+
+.remetenteMenssage {
+    background-color: #fff;
+
+    &:before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-bottom: 17px solid transparent;
+        border-right: 17px solid #fff;
+        position: absolute;
+        top: 0;
+        left: -10px;
+    }
+}
+
+.destinMenssage {
+    background-color: #c7c7c7;
+    text-align: right;
+
+    &:after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-bottom: 17px solid transparent;
+        border-left: 17px solid #c7c7c7;
+        position: absolute;
+        top: 0;
+        right: -10px;
+    }
+}
+
+/* Enviar Menssagem */
+
+.containerEnviarMenssage {
+    background-color: #efefef;
+    border-left: 1px solid #ddd;
+    height: 60px;
+    padding: 0 20px 0 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#inputUsuario {
+    position: absolute;
+    top: 10px;
+    background-color: #fff;
+    border: none;
+    width: calc(89% - 20px);
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+*:focus {
+    outline: none;
+}
+
+.containerEnviarMenssage .btn {
+    margin-top: 10px;
+    padding: 7px 10px;
+    background-color: #c7c7c7;
+    border: none;
+    border-radius: 10px;
+    float: right;
+}
+
+.scrollbar {
+    height: 100%;
+    background-color: transparent;
+    overflow-y: scroll;
+    padding: 10px;
+    bottom: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#style-1 {
+    &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        background-color: #f5f5f5;
+    }
+
+    &::-webkit-scrollbar {
+        width: 4px;
+        background-color: #f5f5f5;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        background-color: #555;
+    }
+}
+
+#linkchat {
+    background-color: #4fc3f7;
+    transition: 04s ease;
+}

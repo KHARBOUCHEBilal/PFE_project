@@ -1,0 +1,48 @@
+.modal {
+    .last-add-product-model {
+        padding: 20px !important;
+        .suivant {
+            text-align: center;
+            border: none;
+            padding: 5px 20px;
+            background-color: $mainColor;
+            color: #fff;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+        .date {
+            padding: 20px 40px;
+        }
+        .validate {
+            width: 100%;
+            padding: 20px 10px;
+            display: flex;
+            justify-content: space-between;
+            .back {
+                background-color: #ddd;
+                border-radius: 5px;
+                text-align: center;
+                color: #555;
+                border: none;
+                padding: 0 15px;
+            }
+        }
+        input {
+            margin-right: 30px;
+            border: 1px solid #999;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .radio {
+            margin: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: $textColor1;
+            input {
+                padding: 10px 20px;
+                margin: 10px 20px 10px 0;
+                font-size: 30px;
+            }
+        }
+    }
+}

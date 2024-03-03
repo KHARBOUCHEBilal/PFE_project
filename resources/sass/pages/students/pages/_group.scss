@@ -1,0 +1,35 @@
+.group{
+    .title{
+        font-size: 22px;
+        padding: 10px 0;
+        margin-top: 15px;
+        font-weight: bold;
+    }
+    .subjects{
+        background-color: rgba($color: $mainColor, $alpha: .1);
+        border-radius: 10px;
+        .subject{
+           padding: 5px 10px;
+           font-size: 18px;
+           font-weight: bold;   
+        }
+    }
+    .members{
+        background-color: rgba($color: $secondColor, $alpha: .1);
+        border-radius: 10px;
+        .member{
+            padding: 5px 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+
+    .motivation{
+        background-color: rgba($color: $body-bg, $alpha: 1);
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 17px;
+        color: #222;
+
+    }
+}

@@ -1,0 +1,158 @@
+.form .section {
+    padding: 20px 15px;
+    height: 70px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.form .section::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #ccc;
+    position: absolute;
+    left: 65.5%;
+    display: block;
+    top: 33px;
+}
+@media (max-width: 767px) {
+    .form .section::after {
+        left: 76%;
+    }
+}
+.form .section::before {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #ccc;
+    position: absolute;
+    right: 65.5%;
+    display: block;
+    top: 33px;
+}
+@media (max-width: 767px) {
+    .form .section::before {
+        right: 76%;
+    }
+}
+.form .section .title {
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    width: 32%;
+    font-size: 16px;
+    font-weight: normal;
+    color: #666;
+    margin: auto;
+}
+@media (max-width: 767px) {
+    .form .section .title {
+        width: 55%;
+    }
+}
+.form .logo {
+    padding: 0 20px;
+    text-align: start;
+}
+@media (max-width: 767px) {
+    .form .logo {
+        text-align: center;
+    }
+}
+.form .logo label {
+    color: #f2f2f2;
+    background-color: $mainColor;
+    font-size: 18px;
+    border-radius: 20px;
+    margin-top: 10px;
+    width: 200px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    box-shadow: 0 7.9873px 6.974px rgba(39, 170, 109, 0.2);
+}
+.form .logo label:hover {
+    background-color: $secondColor;
+}
+.form .logo input {
+    display: none;
+}
+.form .tags-field {
+    margin: 15px;
+    .label {
+        font-weight: bold;
+        color: #888;
+    }
+}
+.form .field {
+    margin: 15px;
+}
+.form .field > label {
+    display: block;
+    margin: 0;
+}
+.form .field .radio {
+    width: 30px;
+}
+.form .field input,
+.form .field select,
+.form .field textarea {
+    width: 100%;
+    border: none;
+    border: 1px solid #999;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    margin: 8px 0;
+}
+.form .field input:focus,
+.form .field select:focus,
+.form .field textarea:focus {
+    outline: none;
+    border-bottom: 2px solid $mainColor;
+}
+.form .field input:hover,
+.form .field select:hover,
+.form .field textarea:hover {
+    border-bottom: 2px solid $mainColor;
+}
+.form .field label {
+    font-weight: bold;
+    color: #888;
+}
+
+.form .field.gender-section .gender-inputs {
+    margin: 8px 0;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(39, 170, 109, 0.1);
+    border-bottom: 2px solid #999;
+}
+.form .field.gender-section .gender-inputs:hover {
+    border-bottom: 2px solid $secondColor;
+}
+.form .form-actions {
+    margin: 10px;
+    width: 100%;
+    padding: 10px 0;
+}
+.form .form-actions::before {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #ccc;
+    display: block;
+    margin-bottom: 20px;
+}
+.form .form-actions .action {
+    border: none;
+    outline: none;
+    margin: 0 10px;
+}
+.form .form-actions .action:focus {
+    border: none;
+    outline: none;
+}

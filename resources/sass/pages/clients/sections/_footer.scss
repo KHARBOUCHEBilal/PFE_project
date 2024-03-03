@@ -1,0 +1,171 @@
+svg{
+  background-color: #ececec;
+}
+
+.footer {
+    background-color: #191919;
+    padding:0;
+
+    .logo{
+      display: flex;
+      justify-content:start;
+      align-items: center;
+      img{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 2px solid #DDD;
+        overflow: hidden;
+      }
+      h3{
+        color: $mainColor !important;
+        margin: 0 20px !important;
+        font-size: 40px !important;
+      }
+  
+    }
+  }
+  @media (max-width: 767px) {
+    .footer {
+      text-align: center;
+    }
+  }
+  .footer .box ul.policy_angles {
+    line-height: 2;
+    color: #b9b9b9;
+    font-size: 18px;
+    padding: 10px 0;
+    i{
+      color: $mainColor;
+    }
+}
+  .footer .box h3 {
+    color: white;
+    font-size: 50px;
+    margin: 0 0 20px;
+  }
+  .footer .social {
+    padding: 20px 0 0;
+    text-align: center;
+  }
+  .footer .social li {
+    display: inline;
+  }
+  .footer .social li a {
+    background-color: #313131;
+    color: #b9b9b9;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    transition: .3s ease-in-out;
+    border-radius: 50%;
+    margin: 5px;
+  }
+  .footer  .social .facebook:hover {
+    background-color: #1877f2;
+    color: #FFF;
+  }
+  .footer  .social .twitter:hover {
+    background-color: #1da1f2;
+    color: #FFF;
+  }
+  .footer  .social .youtube:hover {
+    background-color: #ff0000;
+    color: #FFF;
+  }
+  .footer  .social .linkdein:hover {
+    background-color: #0054b4;
+    color: #FFF;
+  }
+  .footer  .social .email:hover {
+    background-color: #db3a3a;
+    color: #FFF;
+  }
+  .footer  .social .whatsapp:hover {
+    background-color: #31d153;
+    color: #FFF;
+  }
+  .footer .box{
+    @media (max-width:991px) {
+      margin-bottom: 20px;
+    }
+  }
+  .footer .box .text {
+    line-height: 2;
+    color: #b9b9b9;
+    font-size: 18px;
+    padding: 10px 0;
+    margin: 0;
+  }
+  .footer .box .links li {
+    padding: 15px 0;
+    transition: .3s ease-in-out;
+    text-align: start;
+    margin-left: 20px;
+  }
+  .footer .box .links li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+  .footer .box .links li:hover {
+    padding-left: 10px;
+  }
+  .footer .box .links li:hover a {
+    color: white;
+  }
+  .footer .box .links li a {
+    color: #b9b9b9;
+    transition: .3s ease-in-out;
+  }
+  .footer .box .links li a::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\F101";
+    font-weight: 900;
+    margin-right: 10px;
+    color: $mainColor;
+  }
+  .footer .box .line {
+    display: flex;
+    align-items: center;
+    color: #b9b9b9;
+    margin-bottom: 10px;
+  }
+  .footer .box .line i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 2px solid #ececec;
+    border-radius: 50%;
+    background-color: $mainColor;
+    color: $textColor1;
+    margin: 0 5px 3px;
+
+  }
+  .footer .box .line .info {
+    line-height: 1.7;
+    flex: 1;
+  }
+  .footer .box .line .info span {
+    display: block;
+  }
+  .footer .box iframe{
+    border: 5px solid #ececec;
+  }
+  .footer .footer-gallery img {
+    width: 78px;
+    border: 3px solid white;
+    margin: 2px;
+  }
+  .footer .copyright {
+    padding: 25px 0;
+    text-align: center;
+    color: white;
+    margin: 20px 35px 0;
+    border-top: 1px solid #444;
+    a{
+      color: $mainColor;
+    }
+  }

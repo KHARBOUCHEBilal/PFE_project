@@ -1,0 +1,418 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #f2f2f2;
+  font-family: "Amiri", serif;
+}
+
+ul {
+  list-style: none;
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
+/* Float cancel and delete .deletes and add an equal width */
+.dashboard-title {
+  font-weight: bold !important;
+}
+.cancelbtn,
+.deletebtn {
+  float: left;
+  width: 50%;
+  height: 50px;
+  border: none;
+}
+
+/* Add a color to the cancel button */
+
+.cancelbtn {
+  background-color: rgba(204, 204, 204, 0.7);
+  color: black;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+
+  &:hover,
+  &:focus {
+    background-color: #cccccc;
+  }
+}
+
+/* Add a color to the delete button */
+
+.deletebtn {
+  background-color: rgba(244, 67, 54, 0.7);
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: relative;
+
+  &:hover,
+  &:focus {
+    background-color: #f44336;
+  }
+
+  a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    line-height: 50px;
+    color: $textColor1;
+  }
+}
+
+/* The Modal (background) */
+/* Modal Content/Box */
+/* Style the horizontal ruler */
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Modal Close Button (x) */
+/* Clear floats */
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and delete button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn,
+  .deletebtn {
+    width: 100%;
+  }
+}
+
+.no-sidebar .modal {
+  width: 100% !important;
+}
+
+@media (max-width: 767px) {
+  .modal {
+    width: 100% !important;
+  }
+}
+
+.page {
+  background-color: #f2f2f2;
+
+  &.full-screen {
+    height: 100vh;
+    overflow-y: scroll;
+  }
+}
+.page-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+  }
+  .actions {
+    display: flex;
+  }
+  .import {
+    padding: 5px 15px;
+    height: 35px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    background-color: #cccccc;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 7.9873px 6.974px rgba(0, 0, 0, 0.2);
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+
+    &.delete {
+      background-color: #d84400 !important;
+      color: #fff;
+      &:hover {
+        color: #fff;
+      }
+    }
+
+    &.create {
+      background-color: $mainColor !important;
+      color: #fff;
+      &:hover {
+        color: #fff;
+      }
+    }
+
+    &:hover {
+      background-color: $mainColor;
+      color: $textColor1;
+    }
+    i {
+      padding: 5px;
+    }
+  }
+
+  .other-page {
+    padding: 5px 15px;
+    height: 35px;
+    color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    background-color: $secondColor;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 7.9873px 6.974px rgba(0, 115, 255, 0.2);
+
+    &:hover {
+      background-color: $mainColor;
+      color: $textColor1;
+    }
+
+    a {
+      color: #f2f2f2;
+    }
+
+    i {
+      margin: 0 5px;
+    }
+  }
+}
+
+.page-body {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 2px 18px 1px rgba(49, 53, 72, 0.1);
+
+  &.hide {
+    display: none;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .body-actions {
+    display: flex;
+    margin: 0 0 20px 0;
+
+    li {
+      margin: 5px;
+      color: #555;
+      background-color: #eee;
+      border-radius: 5px;
+      font-weight: bold;
+      width: 35px;
+      height: 35px;
+      line-height: 31px;
+      text-align: center;
+      cursor: pointer;
+
+      &.minimize {
+        line-height: 23px;
+      }
+    }
+  }
+
+  .body-content {
+    display: block;
+
+    &.hide {
+      display: none;
+    }
+
+    .card-body {
+      /* Track */
+      /* Handle */
+
+      &::-webkit-scrollbar {
+        width: 15px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: #f4f5f7;
+        padding: 2px;
+        border-radius: 10px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-image: -webkit-linear-gradient(
+          bottom,
+          $mainColor,
+          $secondColor
+        );
+        background-image: -o-linear-gradient(bottom, $mainColor, $secondColor);
+        background-image: linear-gradient(to top, $mainColor, $secondColor);
+        border-radius: 10px;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.help-block {
+  font-weight: 600;
+  color: #d84400;
+}
+
+label.main-label {
+  margin: 10px auto;
+}
+
+.field .tags {
+  // background-color: rgba(39, 170, 109, 0.05);
+  // padding: 10px;
+  // border-bottom: 2px solid #999;
+
+  // &:hover {
+  //     border-bottom: 2px solid $secondColor;
+  // }
+}
+
+.tag-lable {
+  border: 1px solid #888;
+  border-radius: 10px;
+  position: relative;
+  padding: 2px 10px 2px 20px;
+  font-weight: 500;
+
+  input {
+    position: absolute;
+    top: 8px;
+    left: -22px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.table {
+  form {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid $mainColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    padding: 0;
+    margin: auto;
+    button {
+      padding: 0 5px;
+      color: $mainColor;
+      &:hover {
+        background-color: $mainColor;
+        color: #fff;
+      }
+    }
+    select,
+    button {
+      height: 38px;
+      border-radius: 0;
+      border: none;
+      &:focus,
+      &:hover {
+        border: 1px solid $mainColor;
+        box-shadow: none;
+        outline: none;
+        border: none;
+      }
+    }
+  }
+  thead {
+    background-color: rgba(0, 115, 255, 0.5);
+  }
+}
+.dataTables_scrollHead thead {
+  background-color: rgba(0, 115, 255, 0.5);
+
+  th {
+    position: relative;
+
+    &::before {
+      content: "\f175";
+      font-family: "Font Awesome 6 Free";
+      display: block;
+      font-size: 12px;
+      position: absolute;
+      top: 13px;
+      left: 2px;
+    }
+
+    &.sorting_asc::before {
+      content: "\f176";
+      font-family: "Font Awesome 6 Free";
+      display: block;
+      font-size: 12px;
+      position: absolute;
+      top: 13px;
+      left: 2px;
+    }
+  }
+}
+
+table {
+  width: 100% !important;
+
+  td {
+    white-space: normal !important;
+
+    .btn-group a {
+      margin: 10px 5px;
+    }
+  }
+}
+// }
+
+.ck-editor__editable {
+  min-height: 300px;
+  max-height: 500px;
+}
+
+#filter_div {
+  display: none !important;
+  opacity: 0 !important;
+}
+
+.dataTables_filter {
+  margin-bottom: 5px;
+
+  input {
+    border-radius: 20px !important;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    color: $mainColor;
+    border: 2px solid rgba(0, 115, 255, 0.6) !important;
+  }
+}
+
+.export {
+  float: left !important;
+  height: 35px;
+  width: 120px;
+}

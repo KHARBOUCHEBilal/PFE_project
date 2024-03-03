@@ -1,0 +1,153 @@
+
+.orders{
+  overflow: hidden;
+    .controller-sections{
+      padding: 15px auto 0; 
+      background-color: #FFF; 
+      .num-orders{
+        @media (max-width:767px) {
+          display: block;
+        }
+      }
+    
+    input {
+      padding: 1px 3px; 
+      margin-left: 2px; 
+      margin-bottom: 5px; 
+      border: 2px solid #999; 
+      border-radius: 5px; 
+      max-width: 152px; 
+      outline: none; 
+      &:hover {
+        border: 2px solid #999; 
+      }
+    }
+    .date{
+        display: inline-block; 
+    }
+    .sync {
+      color: #fff; 
+      background-color: rgb(72, 22, 190); 
+      border-radius: 5px; 
+      border: none; 
+      font-weight: bold; 
+      padding: 5px 10px; 
+      margin: auto 3px; 
+      &:hover {
+        background-color: rgb(130, 103, 248); 
+      }
+      }
+      .reset{
+      color: #fff; 
+      background-color: transparent; 
+      border-radius: 5px; 
+      border: none; 
+      font-weight: bold; 
+      padding: 5px 10px; 
+      margin: auto 3px; 
+      &:hover {
+        background-color: rgb(149, 150, 172); 
+      }
+    }
+    .control-sec{
+      text-align: center; 
+      display: inline-block; 
+      margin: 5px; 
+    }
+    select{
+      width: 160px; 
+      height: 30px;
+    }
+    select.conf{
+      width: 190px; 
+    }
+    .num-orders{
+      padding: 15px; 
+    }
+  }
+
+  .orders-table{
+    overflow-x: scroll;
+  }
+  table{
+    .colors{
+      display: block;
+      overflow: hidden;
+      margin: 0;
+      span {
+        
+          width: 100%;
+          height: 17px;
+          border-radius: 10px;
+          display: inline-block;
+          border: 2px solid $textColor1;
+          margin: 0;
+      }
+  }
+
+      td{
+      &:not(:first-child){
+        padding: 2px 0;
+        text-align: center;
+        div{
+          display: block;
+          height: 20px !important;
+          width: 100%; 
+          overflow: hidden;
+          color: #222;
+          background-color: #aaa;
+          &:nth-child(even){
+            background-color: #333;
+            color: #fefefe; 
+          }
+        }
+    }
+  }
+    .yes{
+      padding: 2px 5px; 
+      background-color: rgb(34, 141, 34); 
+      color: #f9f9f9; 
+      height: 15px; 
+      margin: 5px; 
+      border-radius: 5px; 
+      font-size: 12px; 
+    }
+    .non{
+      height: 15px ; 
+      margin: 5px ; 
+      padding: 2px 5px; 
+      font-size: 10px; 
+      background-color: rgb(201, 80, 24); 
+      color: #f9f9f9; 
+      border-radius: 5px; 
+    }
+}
+   .status00{
+   background-color: rgba(255, 21, 5, 0.3) !important; 
+   border-left-color: rgba(255, 21, 5, .8)  !important; 
+   &:hover{
+    background-color: rgba(255, 21, 5, 0.5) !important; 
+   }
+   }
+   .status01{
+    background-color: rgba(135, 95, 35, .3) !important; 
+    border-left-color: rgba(135, 95, 35, 0.8) !important; 
+    &:hover{
+      background-color: rgba(135, 95, 35, .5) !important; 
+     }
+   }
+   .status10{
+    background-color: rgba(89, 155, 253, 0.3) !important; 
+    border-left-color: rgba(89, 155, 253, 0.8) !important; 
+    &:hover{
+      background-color: rgba(89, 155, 253, .5) !important; 
+     }
+   }
+   .status11{
+    background-color: rgba(31, 236, 31, 0.3) !important; 
+    border-left-color: rgba(31, 236, 31, 0.8) !important; 
+    &:hover{
+      background-color: rgba(31, 236, 31, 0.5) !important; 
+     }
+   }
+}

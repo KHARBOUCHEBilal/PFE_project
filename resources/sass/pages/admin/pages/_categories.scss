@@ -1,0 +1,90 @@
+.admin-categories {
+    .options {
+        color: $textColor2 !important;
+        font-size: 16px;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        line-height: 25px;
+        a {
+            color: $textColor2;
+        }
+        .nav-link {
+            position: absolute;
+            top: -17px;
+            left: -30px;
+            &::after {
+                display: none;
+            }
+        }
+
+        .dropdown-menu {
+            li {
+                padding: 3px 0;
+
+                &.booster {
+                    a {
+                        color: $yellow;
+                    }
+                }
+
+                &.on-admar {
+                    a {
+                        color: $mainColor;
+                    }
+                }
+                i {
+                    margin-right: 12px;
+                }
+            }
+        }
+    }
+
+    .sub-category{
+        background-color: #eee;
+        display: none;
+    }
+
+    .show{
+        display: revert;
+    }
+    table {
+        .retate-90{
+            cursor: pointer;
+            transform: rotate(90deg);
+            margin-left: 10px;
+        }
+        thead {
+            height: 60px;
+            line-height: 60px;
+            td{
+                padding: 0 5px;
+            }
+        }
+
+        tbody{
+            tr{
+                background-color: #FFF;
+                height: 60px;
+                line-height: 60px;
+                td{
+                    padding: 0 5px;
+                }
+
+                .status{
+                    padding: 5px 15px;
+                    font-weight: bold;
+                    border-radius: 15px;
+                }
+                .status1{
+                    background-color: rgba($color:$secondColor, $alpha: .1);
+                    color: $secondColor
+                }
+                .status0{
+                    background-color: rgba($color: $red, $alpha: .1);
+                    color: $red
+                }
+            }
+        }
+    }
+}
